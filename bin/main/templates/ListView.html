@@ -5,6 +5,16 @@
 <title>ListView</title>
 </head>
 <body>
+<!--サンプルコードのコピーなので書き換える-->
+	<form method="POST" action="SpringHello">
+		<input type="text" name="name" /> <input type="submit" value="実行！" />
+		<th:block th:if="${name} and ''!=${name}">
+			<br />
+			<br /> Hello [[${name}]]<br />
+			<p th:text="${message}"></p>
+		</th:block>
+	</form>
+
 
 </body>
 </html>

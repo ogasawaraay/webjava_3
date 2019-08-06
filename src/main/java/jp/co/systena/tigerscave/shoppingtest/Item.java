@@ -1,8 +1,8 @@
 package jp.co.systena.tigerscave.shoppingtest;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+//import java.util.HashMap;
+//import java.util.Map;
+//import java.util.Set;
 
 //    int itemId;
 //    String name;
@@ -15,20 +15,30 @@ import java.util.Set;
 //
 //  }
 
-}  public class Object main(String[] args) {
-    ItemList obj = new ItemList();
+//  public class Object main(String[] args) {
+//    ItemList obj = new ItemList();
 
-    //HashMapを定義
-    Map<String, ItemList> itemList = new HashMap<String,ItemList>();
+public class Item{
+//ItemListの中身宣言
+  int itemId;
+  String name;
+  int price;
 
-    ItemList.put("0", new ItemList(0,"ごはん",180));
-    ItemList.put("0", new ItemList(1,"みそしる",80));
+//Itemidとそれに紐づく情報たちを宣言
+  public Item(int itemId,String name,int price) {
+    this.itemId = itemId;
+    this.name = name;
+    this.price = price;
+  }
 
-    obj=itemList.getValue(itemId);
-
-    return obj;
+  public int getItemId() {
+    return itemId;
+  }
+  public String getName() {
+    return name;
+  }
+  public int getPrice() {
+    return price;
   }
 }
-
-
 
